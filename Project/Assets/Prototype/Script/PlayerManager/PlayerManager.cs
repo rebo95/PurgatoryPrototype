@@ -19,9 +19,9 @@ public class PlayerManager : MonoBehaviour
         currentHealth = maxHealth;
     }
 
-    public void takeDamage()
+    public void takeDamage(float Damage)
     {
-        currentHealth -= 10;
+        currentHealth -= Damage;
 
         healthBarImage.fillAmount = currentHealth / maxHealth;
 

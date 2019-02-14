@@ -16,7 +16,7 @@ public class FakePlayer : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.H))
-            playerManager.takeDamage();
+            playerManager.takeDamage(10f);
     }
 
 

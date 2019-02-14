@@ -32,7 +32,7 @@ public class WeaponCode : MonoBehaviour
         {
             if (other.GetComponent<PlayerManager>().player_Id != PM.player_Id)
             {
-                other.GetComponent<PlayerManager>().takeDamage();
+                other.GetComponent<PlayerManager>().takeDamage(attackMove.Damage);
             }
         }
     }
