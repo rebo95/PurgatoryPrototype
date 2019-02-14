@@ -19,6 +19,21 @@ public class PlayerMovement : MonoBehaviour
     PlayerAttack[] C2;
 
 
+
+    public int Player_Id;
+
+
+
+
+
+
+
+
+
+
+
+
+
     // Start is called before the first frame update
     void Start()
     {
