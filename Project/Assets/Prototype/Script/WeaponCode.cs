@@ -6,8 +6,8 @@ public class WeaponCode : MonoBehaviour
 {
     PlayerAttack attackMove;
     public PlayerManager PM;
-
-
+    public Collider col;
+    
     public void FireTheAttack(PlayerAttack atk)
     {
         StartCoroutine("ColliderOn", atk);
@@ -19,10 +19,10 @@ public class WeaponCode : MonoBehaviour
     {
 
         yield return new WaitForSeconds(a.PointOfNoReturn);
-
+        col.enabled = true;
 
         yield return new WaitForSeconds(a.EndOfTheAttack);
-
+        col.enabled = false;
 
     }
 
