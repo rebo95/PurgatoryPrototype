@@ -18,4 +18,6 @@ public class FakePlayer : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.H))
             playerManager.takeDamage();
     }
+
+
 }
