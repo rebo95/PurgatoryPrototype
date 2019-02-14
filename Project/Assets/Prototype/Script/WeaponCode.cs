@@ -35,6 +35,5 @@ public class WeaponCode : MonoBehaviour
                 other.GetComponent<PlayerManager>().takeDamage();
             }
         }
-
     }
 }
