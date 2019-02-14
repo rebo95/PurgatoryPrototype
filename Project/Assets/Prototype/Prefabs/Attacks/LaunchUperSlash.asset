@@ -12,4 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9ea38f4dcaa6d648984268966780679, type: 3}
   m_Name: LaunchUperSlash
   m_EditorClassIdentifier: 
-  Name: 
+  Name: LaunchSlash
+  AnimationKey: 
+  PointOfNoReturn: 0
+  EndOfTheAttack: 0
+  Damage: 0
+  StaminaCost: 0
