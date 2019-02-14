@@ -507,7 +507,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Next
+  m_Text: Fight!
 --- !u!222 &920187301
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -743,7 +743,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1701790560}
-        m_MethodName: NextScreen
+        m_MethodName: GoToArena
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

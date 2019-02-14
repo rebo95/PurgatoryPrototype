@@ -611,10 +611,10 @@ PlayerSettings:
   facebookXfbml: 0
   facebookFrictionlessRequests: 1
   apiCompatibilityLevel: 6
-  cloudProjectId: a7ce352c-9e16-4fb4-b2c0-a75940314e28
+  cloudProjectId: 
   framebufferDepthMemorylessMode: 0
-  projectName: PurgatoryPrototype
-  organizationId: rebo117
+  projectName: 
+  organizationId: 
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
