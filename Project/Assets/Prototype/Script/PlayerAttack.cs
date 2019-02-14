@@ -6,4 +6,14 @@ using UnityEngine;
 public class PlayerAttack : ScriptableObject
 {
     public string Name;
+    public string AnimationKey;
+    public float PointOfNoReturn;
+    public float EndOfTheAttack;
+
+    [Header("Attack Stats:")]
+    public float Damage;
+    public float StaminaCost;
+
+
+
 }
