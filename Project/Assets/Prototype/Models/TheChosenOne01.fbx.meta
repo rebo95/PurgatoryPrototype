@@ -381,8 +381,8 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Combat_Attack_Lunge
-      takeName: Combat_Attack_Lunge
+      name: Armature|Combat_Attack_Lunge
+      takeName: Armature|Combat_Attack_Lunge
       firstFrame: 0
       lastFrame: 34
       wrapMode: 0
