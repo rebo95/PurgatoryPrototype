@@ -31,8 +31,6 @@ public class SplitScreen : MonoBehaviour
     {
         activeCameras = GetComponentsInChildren<Camera>();// take tha cameras on the camera setting object and save a reference to them to work with them
 
-        Vertical = !Vertical;
-
         player1Camera = activeCameras[0];
         player2Camera = activeCameras[1];
 

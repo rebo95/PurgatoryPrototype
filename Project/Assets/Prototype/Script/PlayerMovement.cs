@@ -20,8 +20,8 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-    public int Player_Id;
-
+    public int Player_Id = 1;
+    public char inputController = 'K';
 
 
     // Start is called before the first frame update
@@ -44,8 +44,8 @@ public class PlayerMovement : MonoBehaviour
         switch (CurState)
         {
             case PlayerState.Walking:
-                float h = Input.GetAxis("Horizontal") * WSpeed * Time.deltaTime;
-                float v = Input.GetAxis("Vertical") * WSpeed * Time.deltaTime;
+                float h = Input.GetAxis("Horizontal_P" + Player_Id + inputController) * WSpeed * Time.deltaTime;
+                float v = Input.GetAxis("Vertical_P" + Player_Id + inputController) * WSpeed * Time.deltaTime;
                 transform.localPosition += transform.right * h;
                 transform.localPosition += transform.forward * v;
 
