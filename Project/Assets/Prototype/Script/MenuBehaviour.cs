@@ -7,12 +7,14 @@ using UnityEngine.SceneManagement;
 
 public class MenuBehaviour : MonoBehaviour
 {
+    public GameObject AudioManagerObject;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        AudioManagerObject = GameObject.FindGameObjectWithTag("AudioManager");
     }
-
+    
     //Button functions
     public void NewGame()
     {
@@ -27,6 +29,12 @@ public class MenuBehaviour : MonoBehaviour
     public void GoToArena()
     {
         SceneManager.LoadScene(3);
+        AudioManagerObject.GetComponent<AudioManager>().ArenaStart();
+    }
+
+    public void PlaySFX()
+    {
+        AudioManagerObject.GetComponent<AudioManager>().MenuClickSFX();
     }
 
     // Update is called once per frame
