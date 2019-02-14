@@ -409,8 +409,8 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Combat_Idle
-      takeName: Combat_Idle
+      name: Armature|Combat_Idle
+      takeName: Armature|Combat_Idle
       firstFrame: 0
       lastFrame: 58
       wrapMode: 0
@@ -437,10 +437,10 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Combat_Walking
-      takeName: Combat_Walking
+      name: Armature|Combat_walk
+      takeName: Armature|Combat_walk
       firstFrame: 0
-      lastFrame: 58
+      lastFrame: 59
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
