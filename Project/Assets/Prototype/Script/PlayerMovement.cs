@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     public PlayerState CurState;
     //Refence
     GameCode GC;
+    Animator anim;
     //MOVEMENT STATE
     public float WSpeed = 3;
     //ATTACK STATE
@@ -27,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        anim = transform.GetChild(0).GetComponent<Animator>();
         GC = GameObject.FindGameObjectWithTag("GM").GetComponent<GameCode>();
         updateAttacks();
     }
@@ -86,6 +88,7 @@ public class PlayerMovement : MonoBehaviour
         {
             curAttack = C2[ComboIndex];
         }
+        anim.SetTrigger(curAttack.AnimationKey);
         print(curAttack.Name);
         ComboIndex++;
     }

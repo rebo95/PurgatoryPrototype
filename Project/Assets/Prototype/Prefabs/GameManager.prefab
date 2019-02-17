@@ -46,9 +46,9 @@ MonoBehaviour:
   PlayerOne: {fileID: 0}
   P1Combo1:
   - {fileID: 11400000, guid: 51c8314d1d17e9e4c8c7030c21dd213c, type: 2}
-  - {fileID: 11400000, guid: 51c8314d1d17e9e4c8c7030c21dd213c, type: 2}
-  - {fileID: 11400000, guid: 51c8314d1d17e9e4c8c7030c21dd213c, type: 2}
-  - {fileID: 11400000, guid: 51c8314d1d17e9e4c8c7030c21dd213c, type: 2}
+  - {fileID: 11400000, guid: 63a105d0ae6a15d47a2c67592b575b17, type: 2}
+  - {fileID: 11400000, guid: 0f04849b47319ff4fb39bcd2bf2eb470, type: 2}
+  - {fileID: 11400000, guid: 27927007c09c53a4d97e6ed43823c639, type: 2}
   - {fileID: 11400000, guid: 51c8314d1d17e9e4c8c7030c21dd213c, type: 2}
   P1Combo2:
   - {fileID: 11400000, guid: 51c8314d1d17e9e4c8c7030c21dd213c, type: 2}
