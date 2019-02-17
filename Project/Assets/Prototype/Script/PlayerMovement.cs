@@ -74,18 +74,23 @@ public class PlayerMovement : MonoBehaviour
     }
     void attackStart(int comboNr)
     {
-        if (ComboIndex >= 5)
-        {
-            ComboIndex = 0;
-        }
+
 
         PlayerAttack curAttack;
         if (comboNr == 1)
         {
+            if (ComboIndex >= C1.Length)
+            {
+                ComboIndex = 0;
+            }
             curAttack = C1[ComboIndex];
         }
         else
         {
+            if (ComboIndex >= C2.Length)
+            {
+                ComboIndex = 0;
+            }
             curAttack = C2[ComboIndex];
         }
         anim.SetTrigger(curAttack.AnimationKey);
