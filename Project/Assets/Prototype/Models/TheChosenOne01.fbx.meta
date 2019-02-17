@@ -357,6 +357,7 @@ ModelImporter:
     7400034: Armature|Comba_Attack_SloppyStab
     7400036: Armature|Combat_Attack_FerventAnger
     7400038: Armature|Comba_Attack_SureStrike
+    7400040: Armature|Combat_Attack_SureStrike2
     9500000: //RootNode
     11100000: //RootNode
     13700000: TheChosenOne
@@ -531,10 +532,10 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Armature|Comba_Attack_SureStrike
-      takeName: Armature|Comba_Attack_SureStrike
+      name: Armature|Combat_Attack_SureStrike2
+      takeName: Armature|Combat_Attack_SureStrike2
       firstFrame: 0
-      lastFrame: 62
+      lastFrame: 98
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
