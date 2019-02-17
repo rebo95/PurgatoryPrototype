@@ -8,19 +8,19 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 0
+  - enabled: 1
     path: Assets/Prototype/Scenes/MainMenu.unity
     guid: bcc08478e0472c5488c008e181128f48
-  - enabled: 0
+  - enabled: 1
     path: Assets/Prototype/Scenes/CardScreen01.unity
     guid: 24c4bd54b77765a40872e371ed47a1c6
-  - enabled: 0
+  - enabled: 1
     path: Assets/Prototype/Scenes/CardScreen02.unity
     guid: cd66d240c965e3b4ebb00890ffc4766d
-  - enabled: 0
+  - enabled: 1
     path: Assets/Prototype/Scenes/Arena.unity
     guid: 11ad6747ce3efc94a921be0a3c48e4f9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Prototype/Scenes/AaronScene.unity
     guid: e079977d5f517ed408023385f6f59404
   m_configObjects: {}
