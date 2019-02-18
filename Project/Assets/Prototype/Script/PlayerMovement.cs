@@ -52,13 +52,27 @@ public class PlayerMovement : MonoBehaviour
                 transform.localPosition += transform.right * h;
                 transform.localPosition += transform.forward * v;
 
+                if (h == 0 && v == 0)
+                {
+                    anim.SetBool("Walking",false);
+                }
+                else
+                {
+                    anim.SetBool("Walking", true);
+
+                }
+
                 if (Input.GetButtonDown("Fire1" + inputController))
                 {
                     attackStart(1);
+                    anim.SetBool("Walking", false);
+
                 }
                 else if (Input.GetButtonDown("Fire2" + inputController))
                 {
                     attackStart(2);
+                    anim.SetBool("Walking", false);
+
                 }
 
                 break;
