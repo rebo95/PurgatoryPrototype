@@ -9,6 +9,8 @@ public class PlayerAttack : ScriptableObject
     public string AnimationKey;
     public float PointOfNoReturn;
     public float EndOfTheAttack;
+    public Sprite AttackImage;
+
 
     [Header("Attack Stats:")]
     public float Damage;
