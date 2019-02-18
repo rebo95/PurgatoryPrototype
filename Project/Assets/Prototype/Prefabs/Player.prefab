@@ -229,6 +229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LungeAttack: {fileID: 8300000, guid: 693859aa2c70ac746b9170497e37bcc4, type: 3}
   SloppyStab: {fileID: 8300000, guid: 1c1465184dd05af4ba2363fe370cd564, type: 3}
+  FerventAnger: {fileID: 8300000, guid: 8c20278878a4f4543b03bb33f1d4d0d3, type: 3}
 --- !u!1 &5975185780772696922
 GameObject:
   m_ObjectHideFlags: 0

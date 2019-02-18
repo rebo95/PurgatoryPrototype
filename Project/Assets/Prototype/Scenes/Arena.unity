@@ -124,6 +124,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SplitScreenSystem
       objectReference: {fileID: 0}
+    - target: {fileID: 7967951350408594634, guid: b956c7850cb7f12478d487b62d6e920d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 102377039757330690, guid: b956c7850cb7f12478d487b62d6e920d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -588,11 +593,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 5975185780772696922, guid: 585f88fe8b08bad4b8382c7c58438caf,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5975185780772696927, guid: 585f88fe8b08bad4b8382c7c58438caf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -667,7 +667,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!81 &1398922364
 AudioListener:
   m_ObjectHideFlags: 0
