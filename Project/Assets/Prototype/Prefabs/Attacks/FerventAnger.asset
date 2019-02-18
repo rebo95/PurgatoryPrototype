@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: FerventAnger
   AnimationKey: FerventAnger
-  PointOfNoReturn: 0
-  EndOfTheAttack: 0
+  PointOfNoReturn: 0.5
+  EndOfTheAttack: 1
   Damage: 10
   StaminaCost: 0

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: SureStrike
   AnimationKey: SureStrike
-  PointOfNoReturn: 0
-  EndOfTheAttack: 0
+  PointOfNoReturn: 0.3
+  EndOfTheAttack: 0.5
   Damage: 10
   StaminaCost: 0

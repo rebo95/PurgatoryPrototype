@@ -30,6 +30,8 @@ public class WeaponCode : MonoBehaviour
     {
         if (other.tag == "Player")
         {
+
+
             if (other.GetComponent<PlayerManager>().player_Id != PM.player_Id)
             {
                 other.GetComponent<PlayerManager>().takeDamage(attackMove.Damage);

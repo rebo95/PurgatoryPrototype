@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     //Refence
     GameCode GC;
     Animator anim;
+    public WeaponCode weapon;
     //MOVEMENT STATE
     public float WSpeed = 3;
     //ATTACK STATE
@@ -94,7 +95,10 @@ public class PlayerMovement : MonoBehaviour
             curAttack = C2[ComboIndex];
         }
         anim.SetTrigger(curAttack.AnimationKey);
-        print(curAttack.Name);
+
+
+        weapon.FireTheAttack(curAttack);
+
         ComboIndex++;
     }
 }

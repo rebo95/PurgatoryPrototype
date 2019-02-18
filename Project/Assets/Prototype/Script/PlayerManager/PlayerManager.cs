@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class PlayerManager : MonoBehaviour
 {
     public float maxHealth;
-    float currentHealth;
+    public float currentHealth;
     public Image healthBarImage;
     public int player_Id;
 
@@ -21,6 +21,7 @@ public class PlayerManager : MonoBehaviour
 
     public void takeDamage(float Damage)
     {
+        print(Damage.ToString());
         currentHealth -= Damage;
 
         healthBarImage.fillAmount = currentHealth / maxHealth;

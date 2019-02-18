@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: SloppyStab
   AnimationKey: SloppyStab
-  PointOfNoReturn: 0
-  EndOfTheAttack: 0
+  PointOfNoReturn: 0.5
+  EndOfTheAttack: 0.5
   Damage: 5
   StaminaCost: 0
