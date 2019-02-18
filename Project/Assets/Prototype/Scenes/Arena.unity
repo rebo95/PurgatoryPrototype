@@ -112,7 +112,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &207086635
+--- !u!1001 &220853734
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -123,11 +123,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SplitScreenSystem
-      objectReference: {fileID: 0}
-    - target: {fileID: 7967951350408594634, guid: b956c7850cb7f12478d487b62d6e920d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 102377039757330690, guid: b956c7850cb7f12478d487b62d6e920d,
         type: 3}
@@ -167,7 +162,7 @@ PrefabInstance:
     - target: {fileID: 102377039757330690, guid: b956c7850cb7f12478d487b62d6e920d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 102377039757330690, guid: b956c7850cb7f12478d487b62d6e920d,
         type: 3}
@@ -184,7 +179,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 3918967576641100616, guid: b956c7850cb7f12478d487b62d6e920d,
+        type: 3}
+      propertyPath: inputController
+      value: 75
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 8949710170779803729, guid: b956c7850cb7f12478d487b62d6e920d, type: 3}
+    - {fileID: 7783217778440345803, guid: b956c7850cb7f12478d487b62d6e920d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b956c7850cb7f12478d487b62d6e920d, type: 3}
 --- !u!1 &425655787
 GameObject:
@@ -562,6 +564,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 27927007c09c53a4d97e6ed43823c639,
         type: 2}
+    - target: {fileID: 6717909622654165500, guid: 5b101e92288985c4f84884bbc0879fca,
+        type: 3}
+      propertyPath: PlayerOne
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6717909622654165500, guid: 5b101e92288985c4f84884bbc0879fca,
+        type: 3}
+      propertyPath: PlayerTwo
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b101e92288985c4f84884bbc0879fca, type: 3}
 --- !u!1001 &1206201228
@@ -575,6 +587,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5975185780772696922, guid: 585f88fe8b08bad4b8382c7c58438caf,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5975185780772696927, guid: 585f88fe8b08bad4b8382c7c58438caf,
         type: 3}
@@ -614,7 +631,7 @@ PrefabInstance:
     - target: {fileID: 5975185780772696927, guid: 585f88fe8b08bad4b8382c7c58438caf,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5975185780772696927, guid: 585f88fe8b08bad4b8382c7c58438caf,
         type: 3}
@@ -650,7 +667,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &1398922364
 AudioListener:
   m_ObjectHideFlags: 0
@@ -713,5 +730,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: -148.25601, z: 0}
