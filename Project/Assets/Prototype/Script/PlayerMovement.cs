@@ -51,11 +51,11 @@ public class PlayerMovement : MonoBehaviour
                 transform.localPosition += transform.right * h;
                 transform.localPosition += transform.forward * v;
 
-                if (Input.GetButtonDown("Fire1"))
+                if (Input.GetButtonDown("Fire1" + inputController))
                 {
                     attackStart(1);
                 }
-                else if (Input.GetButtonDown("Fire2"))
+                else if (Input.GetButtonDown("Fire2" + inputController))
                 {
                     attackStart(2);
                 }
