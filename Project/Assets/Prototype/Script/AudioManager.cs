@@ -37,8 +37,8 @@ public class AudioManager : MonoBehaviour
 
         //Lunge Attack
         public void LungeSFX()
-    {
-        gameObject.transform.GetChild(0).transform.GetChild(0).GetComponent<AudioSource>().PlayOneShot(LungeAttack);
+    {   
+        gameObject.transform.GetChild(3).transform.GetChild(0).GetComponent<AudioSource>().PlayOneShot(LungeAttack);
     }
 
     // Update is called once per frame
