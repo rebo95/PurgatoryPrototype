@@ -16,5 +16,6 @@ MonoBehaviour:
   AnimationKey: SureStrike
   PointOfNoReturn: 0.3
   EndOfTheAttack: 0.5
-  Damage: 10
+  AttackImage: {fileID: 0}
+  Damage: 4
   StaminaCost: 0

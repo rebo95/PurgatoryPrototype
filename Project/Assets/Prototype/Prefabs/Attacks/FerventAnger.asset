@@ -16,5 +16,6 @@ MonoBehaviour:
   AnimationKey: FerventAnger
   PointOfNoReturn: 0.5
   EndOfTheAttack: 1
-  Damage: 10
+  AttackImage: {fileID: 0}
+  Damage: 3
   StaminaCost: 0

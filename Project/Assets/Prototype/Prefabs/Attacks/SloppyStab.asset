@@ -16,5 +16,6 @@ MonoBehaviour:
   AnimationKey: SloppyStab
   PointOfNoReturn: 0.5
   EndOfTheAttack: 0.5
-  Damage: 5
+  AttackImage: {fileID: 0}
+  Damage: 2
   StaminaCost: 0
