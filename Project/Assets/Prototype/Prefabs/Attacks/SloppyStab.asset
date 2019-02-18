@@ -16,5 +16,5 @@ MonoBehaviour:
   AnimationKey: SloppyStab
   PointOfNoReturn: 0
   EndOfTheAttack: 0
-  Damage: 0
+  Damage: 5
   StaminaCost: 0

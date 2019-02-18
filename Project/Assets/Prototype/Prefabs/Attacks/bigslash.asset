@@ -16,5 +16,5 @@ MonoBehaviour:
   AnimationKey: BigSlash
   PointOfNoReturn: 0
   EndOfTheAttack: 0
-  Damage: 0
+  Damage: 10
   StaminaCost: 0
