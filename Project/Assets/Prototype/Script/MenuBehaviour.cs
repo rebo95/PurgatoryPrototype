@@ -49,6 +49,11 @@ public class MenuBehaviour : MonoBehaviour
         PauseMenu.SetActive(false);
     }
 
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
+
     public void PlaySFX()
     {
         AudioManagerObject.GetComponent<AudioManager>().MenuClickSFX();
