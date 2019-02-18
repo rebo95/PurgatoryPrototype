@@ -8,6 +8,7 @@ public class Audio_PlayerFeedback : MonoBehaviour
     public AudioClip LungeAttack;
     public AudioClip SloppyStab;
     public AudioClip FerventAnger;
+    public AudioClip SureStrike;
 
     // Start is called before the first frame update
     void Start()
@@ -34,9 +35,18 @@ public class Audio_PlayerFeedback : MonoBehaviour
         gameObject.transform.GetChild(3).transform.GetChild(0).GetComponent<AudioSource>().PlayOneShot(FerventAnger);
     }
 
+    // Sure Strike
+    public void SureStrikeSFX()
+    {
+        gameObject.transform.GetChild(3).transform.GetChild(0).GetComponent<AudioSource>().PlayOneShot(SureStrike);
+    }
+
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyUp(KeyCode.Escape))
+        {
+
+        }
     }
 }

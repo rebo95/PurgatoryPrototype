@@ -8,11 +8,18 @@ using UnityEngine.SceneManagement;
 public class MenuBehaviour : MonoBehaviour
 {
     public GameObject AudioManagerObject;
-
+    private GameObject PauseMenu;
     // Start is called before the first frame update
     void Start()
     {
         AudioManagerObject = GameObject.FindGameObjectWithTag("AudioManager");
+        
+        if(GameObject.FindGameObjectWithTag("Menu_Pause").gameObject != null)
+        {
+            PauseMenu = GameObject.FindGameObjectWithTag("Menu_Pause").gameObject;
+            PauseMenu.SetActive(false);
+        }
+    
     }
     
     //Button functions
@@ -32,6 +39,16 @@ public class MenuBehaviour : MonoBehaviour
         AudioManagerObject.GetComponent<AudioManager>().ArenaStart();
     }
 
+    public void ReturnToMain()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void Resume()
+    {
+        PauseMenu.SetActive(false);
+    }
+
     public void PlaySFX()
     {
         AudioManagerObject.GetComponent<AudioManager>().MenuClickSFX();
@@ -40,6 +57,9 @@ public class MenuBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyUp(KeyCode.Escape))
+        {
+            PauseMenu.SetActive(true);
+        }
     }
 }

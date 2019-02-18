@@ -9,6 +9,7 @@ TagManager:
   - SceneManager
   - Player1System
   - Player2System
+  - Menu_Pause
   layers:
   - Default
   - TransparentFX
