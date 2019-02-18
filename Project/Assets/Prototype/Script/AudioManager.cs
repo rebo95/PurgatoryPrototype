@@ -8,7 +8,7 @@ public class AudioManager : MonoBehaviour
     private AudioSource ArenaMusic;
     private AudioSource MenuMusic;
 
-    public AudioClip LungeAttack;
+ 
 
     
     // Start is called before the first frame update
@@ -31,14 +31,6 @@ public class AudioManager : MonoBehaviour
     {
         ArenaMusic.Play();
         MenuMusic.Stop();
-    }
-
-    //Attack-sounds
-
-        //Lunge Attack
-        public void LungeSFX()
-    {   
-        gameObject.transform.GetChild(3).transform.GetChild(0).GetComponent<AudioSource>().PlayOneShot(LungeAttack);
     }
 
     // Update is called once per frame
