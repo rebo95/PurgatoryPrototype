@@ -17,5 +17,5 @@ MonoBehaviour:
   PointOfNoReturn: 0.3
   EndOfTheAttack: 1
   AttackImage: {fileID: 21300000, guid: 301b598e475e8dd41865e527c1d38191, type: 3}
-  Damage: 8
+  Damage: 10
   StaminaCost: 0

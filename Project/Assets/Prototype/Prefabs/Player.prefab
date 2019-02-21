@@ -213,7 +213,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91e17bb0faeda0a44977f0345a535bf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PM: {fileID: 2042610163}
+  PManager: {fileID: 2042610163}
+  PMovement: {fileID: 5355124949400157177}
   col: {fileID: 5255933256526816861}
 --- !u!114 &6164293220710841395
 MonoBehaviour:
@@ -242,7 +243,6 @@ GameObject:
   - component: {fileID: 5975185780772696927}
   - component: {fileID: 5975185780772696921}
   - component: {fileID: 5975185780772696920}
-  - component: {fileID: 5975185780772696923}
   - component: {fileID: 342849514}
   - component: {fileID: 5355124949400157177}
   - component: {fileID: 2042610163}
@@ -315,19 +315,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &5975185780772696923
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5975185780772696922}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 0.3}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!143 &342849514
 CharacterController:
   m_ObjectHideFlags: 0
@@ -359,6 +346,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurState: 0
+  CC: {fileID: 0}
   weapon: {fileID: 9058475114875780477}
   WSpeed: 3
   ComboIndex: 0
@@ -408,6 +396,10 @@ PrefabInstance:
     - target: {fileID: 100004, guid: 3ed4890a18ebb184a8035ca249c21a79, type: 3}
       propertyPath: m_Name
       value: TheChosenOne01
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 3ed4890a18ebb184a8035ca249c21a79, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 3ed4890a18ebb184a8035ca249c21a79, type: 3}
       propertyPath: m_LocalPosition.x

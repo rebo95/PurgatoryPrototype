@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     //Refence
     GameCode GC;
     Animator anim;
+    public CameraController CC;
     public WeaponCode weapon;
     //MOVEMENT STATE
     public float WSpeed = 3;
@@ -19,11 +20,14 @@ public class PlayerMovement : MonoBehaviour
     public int ComboIndex = 0;
     PlayerAttack[] C1;
     PlayerAttack[] C2;
-
+    //COMBO TIME
+    float ResetTime = 1;
+    float curTime;
 
 
     public int Player_Id = 1;
     public char inputController = 'K';
+
 
 
     // Start is called before the first frame update
@@ -74,6 +78,16 @@ public class PlayerMovement : MonoBehaviour
                     anim.SetBool("Walking", false);
 
                 }
+                // COMBO TIMER
+                if (ComboIndex != 0)
+                {
+                    curTime -= Time.deltaTime;
+                    if (curTime <= 0)
+                    {
+                        ComboIndex = 0;
+                    }
+                }
+  
 
                 break;
             case PlayerState.Attacking:
@@ -90,6 +104,9 @@ public class PlayerMovement : MonoBehaviour
     void attackStart(int comboNr)
     {
 
+        curTime = ResetTime;
+        CC.enabled = false;
+        CurState = PlayerState.Attacking;
 
         PlayerAttack curAttack;
         if (comboNr == 1)
@@ -111,7 +128,12 @@ public class PlayerMovement : MonoBehaviour
         anim.SetTrigger(curAttack.AnimationKey);
 
 
+
+
+        //curAttack.Damage = curAttack.Damage * (((ComboIndex + 1)) + 1); // COMBO REWARD
+
         weapon.FireTheAttack(curAttack);
+
 
         ComboIndex++;
     }

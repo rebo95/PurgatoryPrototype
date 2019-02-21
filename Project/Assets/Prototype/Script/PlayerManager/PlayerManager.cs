@@ -14,8 +14,12 @@ public class PlayerManager : MonoBehaviour
     public Text EndRoundText;
     public Button ReturnToMenuButton;
 
+
+    //VARS
+    PlayerMovement PMovement;
     private void Start()
     {
+        PMovement = GetComponent<PlayerMovement>();
         currentHealth = maxHealth;
     }
 
@@ -23,6 +27,7 @@ public class PlayerManager : MonoBehaviour
     {
         print(Damage.ToString());
         currentHealth -= Damage;
+        PMovement.ComboIndex = 0;
 
         healthBarImage.fillAmount = currentHealth / maxHealth;
 

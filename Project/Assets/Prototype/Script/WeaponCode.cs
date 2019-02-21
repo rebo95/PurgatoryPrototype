@@ -5,7 +5,8 @@ using UnityEngine;
 public class WeaponCode : MonoBehaviour
 {
     PlayerAttack attackMove;
-    public PlayerManager PM;
+    public PlayerManager PManager;
+    public PlayerMovement PMovement;
     public Collider col;
     
     public void FireTheAttack(PlayerAttack atk)
@@ -24,6 +25,8 @@ public class WeaponCode : MonoBehaviour
         yield return new WaitForSeconds(a.EndOfTheAttack);
         col.enabled = false;
 
+        PMovement.CurState = PlayerMovement.PlayerState.Walking;
+        PMovement.CC.enabled = true;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -32,8 +35,9 @@ public class WeaponCode : MonoBehaviour
         {
 
 
-            if (other.GetComponent<PlayerManager>().player_Id != PM.player_Id)
+            if (other.GetComponent<PlayerManager>().player_Id != PManager.player_Id)
             {
+                col.enabled = false;
                 other.GetComponent<PlayerManager>().takeDamage(attackMove.Damage);
             }
         }

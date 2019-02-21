@@ -54,12 +54,12 @@ public class SplitScreen : MonoBehaviour
         {
 
             player1Camera.rect = new Rect(0, 0, 0.5f, 1);
-            player2Camera.rect = new Rect(0.5f, 0, 0.5f, 1);
+            player2Camera.rect = new Rect(0.5f, 0f, 0.5f, 1);
         }
         else
         {
-            player1Camera.rect = new Rect(0, 0.5f, 1, 0.5f);
-            player2Camera.rect = new Rect(0, 0.0f, 1, 0.5f);
+            player1Camera.rect = new Rect(0, 0.51f, 1, 0.5f);
+            player2Camera.rect = new Rect(0, 0f, 1, 0.49f);
         }
     }
 
