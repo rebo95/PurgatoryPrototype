@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
     PlayerAttack[] C1;
     PlayerAttack[] C2;
     //COMBO TIME
-    float ResetTime = 1.5f;
+    float ResetTime = 1;
     float curTime;
 
 
