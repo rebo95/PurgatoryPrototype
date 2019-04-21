@@ -29,7 +29,7 @@ public class Intro_Scene_SFX_Audio_Manager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        playAaronAudio1();
     }
 
     // Update is called once per frame
@@ -41,91 +41,115 @@ public class Intro_Scene_SFX_Audio_Manager : MonoBehaviour
     void playAaronAudio1()
     {
         aaron1.Play();
+        Invoke("playPabloAudio1", aaron1.clip.length + 0.05f);
     }
 
     void playAaronAudio2()
     {
-
+        aaron2.Play();
+        Invoke("playPabloAudio2", aaron2.clip.length + 0.05f);
     }
 
     void playAaronAudio3()
     {
-
+        aaron3.Play();
+        Invoke("playPabloAudio3", aaron3.clip.length + 0.05f);
     }
 
     void playAaronAudio4()
     {
-
+        aaron4.Play();
+        Invoke("playPabloAudio4", aaron4.clip.length + 0.05f);
     }
 
     void playAaronAudio5()
     {
-
+        aaron5.Play();
+        Invoke("playPabloAudio5", aaron5.clip.length + 0.05f);
     }
 
     void playAaronAudio6()
     {
-
+        aaron6.Play();
+        Invoke("playPabloAudio6", aaron6.clip.length + 0.05f);
     }
 
     void playAaronAudio7()
     {
-
+        aaron7.Play();
+        Invoke("playPabloAudio7", aaron7.clip.length + 0.05f);
     }
 
     void playAaronAudio8()
     {
-
+        aaron8.Play();
+        Invoke("playPabloAudio8", aaron8.clip.length + 0.05f);
     }
 
     void playAaronAudio9()
     {
-
+        aaron9.Play();
+        Invoke("playPabloAudio9", aaron9.clip.length + 0.05f);
     }
 
-    void plaPabloAudio1()
+    void playAaronAudio10()
     {
-
+        aaron10.Play();
     }
 
+
+
+    void playPabloAudio1()
+    {
+        pablo1.Play();
+        Invoke("playAaronAudio2", pablo1.clip.length + 0.05f);
+    }
 
     void playPabloAudio2()
     {
-
+        pablo2.Play();
+        Invoke("playAaronAudio3", pablo2.clip.length + 0.05f);
     }
 
     void playPabloAudio3()
     {
-
+        pablo3.Play();
+        Invoke("playAaronAudio4", pablo3.clip.length + 0.05f);
     }
 
     void playPabloAudio4()
     {
-
+        pablo4.Play();
+        Invoke("playAaronAudio5", pablo4.clip.length + 0.05f);
     }
 
     void playPabloAudio5()
     {
-
+        pablo5.Play();
+        Invoke("playAaronAudio6", pablo5.clip.length + 0.05f);
     }
 
     void playPabloAudio6()
     {
-
+        pablo6.Play();
+        Invoke("playAaronAudio7", pablo6.clip.length + 0.05f);
     }
 
     void playPabloAudio7()
     {
-
+        pablo7.Play();
+        Invoke("playAaronAudio8", pablo7.clip.length + 0.05f);
     }
 
     void playPabloAudio8()
     {
-
+        pablo8.Play();
+        Invoke("playAaronAudio9", pablo8.clip.length + 0.05f);
     }
 
     void playPabloAudio9()
     {
-
+        pablo9.Play();
+        Invoke("playAaronAudio10", pablo9.clip.length + 0.05f);
     }
 }
