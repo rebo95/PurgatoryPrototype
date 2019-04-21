@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Intro_Scene_SFX_Audio_Manager : MonoBehaviour
 {
@@ -95,6 +96,7 @@ public class Intro_Scene_SFX_Audio_Manager : MonoBehaviour
     void playAaronAudio10()
     {
         aaron10.Play();
+        Invoke("goToMenu", aaron10.clip.length + 2.5f);
     }
 
 
@@ -151,5 +153,10 @@ public class Intro_Scene_SFX_Audio_Manager : MonoBehaviour
     {
         pablo9.Play();
         Invoke("playAaronAudio10", pablo9.clip.length + 0.05f);
+    }
+
+    private void goToMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 }

@@ -30,4 +30,6 @@ public class SFX_Audio_Manager : MonoBehaviour
     {
         warrior2.Play();
     }
+
+
 }
